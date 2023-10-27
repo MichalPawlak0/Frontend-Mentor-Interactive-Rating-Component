@@ -1,0 +1,209 @@
+/* # Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+- Orange: hsl(25, 97%, 53%)
+
+### Neutral
+
+- White: hsl(0, 0%, 100%)
+- Light Grey: hsl(217, 12%, 63%)
+- Medium Grey: hsl(216, 12%, 54%)
+- Dark Blue: hsl(213, 19%, 18%)
+- Very Dark Blue: hsl(216, 12%, 8%)
+
+## Typography
+
+### Body Copy
+
+- Font size (paragraph): 15px
+
+### Font
+
+- Family: [Overpass](https://fonts.google.com/specimen/Overpass)
+- Weights: 400, 700 */
+
+
+*,*::after,*::before{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  font-size: 0.625em;
+  color: white;
+  font-family: "Overpass";
+}
+
+body{
+  background-color: hsl(216, 10%,3%);
+  padding: 25vh 2vw;
+}
+
+.rating-container{
+  background: linear-gradient(to top, hsl(216, 20%, 5.5%),hsl(216, 20%, 10%));
+  height: 40rem;
+  width: 40rem;
+  margin: 0 auto;
+  padding: 3.5rem;
+  display: flex;
+  flex-direction: column;
+  border-radius: 2rem;
+}
+
+.star-row{
+  margin-bottom: 4.6rem;
+  display: inline-block;
+  position: relative;
+}
+
+.star-row:before{
+  content: "";
+  display: block;
+  height: 3.5rem;
+  width: 3.5rem;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(-5%, -48%);
+  background-color: hsla(216, 12%, 54%,0.1);
+  border-radius: 50%;
+}
+
+.star-img{
+  height: 1.2rem;
+  display: block;
+  position: relative;
+  margin-left: 1rem;
+}
+
+.heading{
+  font-size: 2.6rem;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+}
+
+.paragraph{
+  font-size: 1.5rem;
+  color:hsl(217, 12%, 63%);
+  margin-bottom: 3rem;
+  line-height: 2.6rem;
+}
+
+.digits-row{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 3.2rem;
+}
+
+.digit{
+  font-size: 1.4rem;
+  color:hsl(217, 12%, 63%);
+  width: 5rem;
+  height: 5rem;
+  padding: 1.75rem;
+  border: 1px solid hsla(216, 12%, 54%,0);
+  background-color: hsla(216, 12%, 54%,0.1);
+  border-radius: 50%;
+  text-align: center;
+  transition: all 0.4s ease;
+  cursor: pointer;
+}
+
+.digit:hover{
+  background-color: hsl(217, 12%, 43%);
+  color:#fff;
+  }
+
+.btn-submit{
+  font: inherit;
+  font-size: 1.4rem;
+  letter-spacing: 0.25rem;
+  color: white;
+  padding: 1rem 0rem;
+  background-color:hsl(25, 97%, 53%);
+  border: none;
+  border-radius: 2rem;
+  transition: color 0.3s ease;
+  transition: background-color 0.3s ease;
+  transition: box-shadow 0.1s ease-out;
+  transition: transform 0.1s ease-out;
+  cursor: pointer;
+}
+
+.btn-submit:hover{
+  color: hsl(25, 97%, 53%);
+  background-color:#fff;
+  box-shadow:  0px 5px 2px #1d1d1d;
+  transform: translateY(1px);
+
+
+}
+
+.btn-submit:active{
+  box-shadow:  0px 8px 4px #1d1d1d;
+  transform: translateY(3px);
+}
+
+.attribution{
+  margin: 2rem auto;
+  font-size: 11px;
+  text-align: center;
+  width: 40rem;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* Thank you state */
+.rated{
+  text-align: center;
+  padding: 4rem 3.2rem;
+}
+
+.thankyou-img{
+  margin: 0rem 0 2.6rem 0;
+}
+
+.your-rating{
+  font-size: 1.4rem;
+  margin: 0rem auto 3rem;
+  color:hsl(25, 97%, 40%);
+  width: max-content;
+  height: 3rem;
+  padding: 0.75rem 1.5rem;
+  border: 1px solid hsla(216, 12%, 54%,0);
+  background-color: hsla(216, 12%, 54%,0.1);
+  border-radius: 5rem;
+  text-align: center;
+}
+
+.heading--thankyou{
+  margin-bottom: 1rem;
+}
+
+.paragraph--thankyou{
+  margin: 0;
+}
+
+
+.hide{
+  display: none;
+}
+
+.selected{
+  background-color: hsl(25, 97%, 53%) !important;
+  color:#fff;
+}

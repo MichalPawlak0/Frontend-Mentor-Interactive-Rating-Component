@@ -5,45 +5,46 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Interactive rating component</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&family=Overpass:wght@400;700&display=swap" rel="stylesheet">
+  <script src="script.js" defer></script>
+  <title>Simple Solution with Smooth Transitions and minimal JS</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
 
-  <!-- Rating state start -->
+<div class="rating-container rate-us">
+  <div class="star-row"><img class="star-img" src="./images/icon-star.svg"/></div>
+  <div class="text-box">
+    <h2 class="heading">How did we do?</h2>
+    <p class="paragraph">Please let us know how we did with your support request. All feedback is appreciated 
+  to help us improve our offering!</p>
+  </div>
+  <div class="digits-row">
+    <div class="digit" id="digit-1">1</div>
+    <div class="digit" id="digit-2">2</div>
+    <div class="digit" id="digit-3">3</div>
+    <div class="digit" id="digit-4">4</div>
+    <div class="digit" id="digit-5">5</div>
+  </div>
+  <button class="btn-submit" id="submit">SUBMIT</button>
+</div>
 
-  How did we do?
+  <!-- Thank you state -->
+<div class="rating-container rated hide" >
+  <div class="thankyou-img"><img src="./images/illustration-thank-you.svg" alt=""> </div>
+  <div class="your-rating">You selected <span id="rating">5</span> out of 5</div>
+  <div class="thankyou-text-box">
+    <h2 class="heading heading--thankyou">Thank you!</h2>
+  <p class="paragraph paragraph--thankyou">We appreciate you taking the time to give a rating. If you ever need more support, don’t hesitate to get in touch!</p>
+  </div>
+</div>
 
-  Please let us know how we did with your support request. All feedback is appreciated 
-  to help us improve our offering!
-
-  1 2 3 4 5
-
-  Submit
-
-  <!-- Rating state end -->
-
-  <!-- Thank you state start -->
-
-  You selected <!-- Add rating here --> out of 5
-
-  Thank you!
-
-  We appreciate you taking the time to give a rating. If you ever need more support, 
-  don’t hesitate to get in touch!
-
-  <!-- Thank you state end -->
-
-  
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="https://michal-pawlak.netlify.app/" target="_blank">Michał Pawlak</a>.
   </div>
 </body>
 </html>
