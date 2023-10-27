@@ -207,3 +207,41 @@ body{
   background-color: hsl(25, 97%, 53%) !important;
   color:#fff;
 }
+
+@media screen and (max-width:27.5em) {
+  .rating-container{
+    width: 36rem;
+    height: 36rem;
+    padding: 3.6rem 2.4rem 2rem;
+  }
+
+  .paragraph{
+    line-height: 1.5;
+    margin-bottom: 2.8rem;
+  }
+
+  .digits-row{
+  margin-bottom: 3rem;
+  }
+.star-row{
+  margin-bottom: 2.8rem;
+}
+
+  .attribution{
+    width: 36rem;
+  }
+
+
+.rated{
+  padding: 3.4rem 1.4rem 2rem;
+}
+
+.your-rating{
+  font-size: 1.4rem;
+  margin: 0rem auto 2rem;
+}
+
+.thankyou-img{
+  margin: 0rem 0 2rem 0;
+}
+}
